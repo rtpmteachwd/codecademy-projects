@@ -1,21 +1,48 @@
-button {
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 5px;
-    text-decoration: none;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-  }
-  
-  button:hover {
-    cursor: pointer;
-  }
-  
-  button:active {
-    margin-top: 5px;
-    color: black;
-    box-shadow: 0px 0px;
-  }
+body {
+  font-family: 'Roboto Mono', monospace;
+}
 
-  
+h1 {
+  margin: 20px;
+  text-align: center;
+  font-size: 18px;
+}
 
+.container {
+  height: 150px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+.left,
+.center,
+.right {
+  min-height: 75px;
   
+  width: 125px;
+  background-color: dodgerblue;
+  border: 2px solid lightgrey;
+}
+
+#baseline .center {
+  height: 100px;
+  width: 100px;
+  border: 5px solid turquoise;
+}
+
+#flexstart {
+  align-items: flex-start;
+}
+
+#flexend {
+  align-items: flex-end;
+}
+
+#center {
+  align-items: center;
+}
+
+#baseline {
+  align-items: baseline;
+}
